@@ -1,26 +1,23 @@
-#include <stdarg.h>
-#include <stdio.h>
-#include <stdlib.h>
-
 #include "main.h"
 
-int (*search(const char *format))(va_list)
+int (*search(char c))(va_list)
 {
     estructura arr[] = {
         {"c", printf_character},
-      /*  {"s", printf_string}, */
+        {"s", printf_string},
         {NULL, NULL}};
 
     int i = 0;
+    char *x = &c;
 
-    for (i; arr[i].s; i++)
+    for (i; arr[i].s != NULL; i++)
     {
-        if (format == arr[i].s)
+        if (_strcmp(arr[i].s, x) == 0)
         {
-            break;
+            return (arr[i].f);
         }
-        return (arr[i].f);
     }
+    return(NULL);
 }
 
 int _printf(const char *format, ...)
@@ -30,7 +27,7 @@ int _printf(const char *format, ...)
     va_start(list, format);
     int (*f)(va_list);
 
-    for (i; format[i] != '\0'; i++)
+    while (format[i] != '\0')
     {
         if (format[i] != '%')
         {
@@ -39,15 +36,20 @@ int _printf(const char *format, ...)
         }
         else
         {
-            if (format[i + 1] != '\0')
-            {
-                f = search(&format[i + 1]);
-                if (f != NULL)
-                {
-                    f(list);
-                }
-            }
+            i++;
+            f = search(format[i]);
+            counter += (f) ? f(list) : _printf("%%%c", format[i]);
         }
+        i++;
     }
-        va_end(list);
+    va_end(list);
+    return(counter);
+}
+
+int main(void)
+{
+    char ch = 'd';
+    _printf("%c\n", ch);
+    printf("%c\n", ch);
+    return (0);
 }
