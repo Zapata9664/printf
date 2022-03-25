@@ -2,5 +2,7 @@
 #define MAIN_H
 
 int _putchar(char c);
+int _printf(const char *format, ...);
+int print_character(va_list i)
 
 #endif /*MAIN_H*/
