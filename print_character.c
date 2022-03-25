@@ -3,8 +3,9 @@
 #include <stlib.h>
 #include <stdarg.h>
 
-int print_character(va_list i)
+int printf_character(va_list i)
 {
-    count = write(1, %char, 1);
-    return (count);
+    char ch = (char)va_arg(i, int);
+    _putchar(ch);
+    return (1);
 }

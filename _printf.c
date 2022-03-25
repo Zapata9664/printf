@@ -7,8 +7,8 @@
 int (*search(const char *format))(va_list)
 {
 	estructura arr[] = {
-    ("c", printf_character);
-	("s", printf_string);
+    ("c", printf_character)
+	("s", printf_string)
 	(NULL, NULL);
 };
 
@@ -16,7 +16,7 @@ int i = 0;
 
 for (i; arr[i].s; i++)
 {
-	if (*format == arr[i].s)
+	if (format == arr[i].s)
 	{
 		break;
 	}
@@ -45,9 +45,13 @@ int _printf(const char *format, ...)
             {
                 f(list);
             }
-            else
-            {}
-
+            }
         }
 	}
+}
+
+int main(void)
+{
+_printf("d");
+return(0);
 }
