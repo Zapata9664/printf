@@ -6,52 +6,48 @@
 
 int (*search(const char *format))(va_list)
 {
-	estructura arr[] = {
-    ("c", printf_character)
-	("s", printf_string)
-	(NULL, NULL);
-};
+    estructura arr[] = {
+        {"c", printf_character},
+      /*  {"s", printf_string}, */
+        {NULL, NULL}};
 
-int i = 0;
+    int i = 0;
 
-for (i; arr[i].s; i++)
-{
-	if (format == arr[i].s)
-	{
-		break;
-	}
-	return (arr[i].f);
-}
+    for (i; arr[i].s; i++)
+    {
+        if (format == arr[i].s)
+        {
+            break;
+        }
+        return (arr[i].f);
+    }
 }
 
 int _printf(const char *format, ...)
 {
-	int i = 0, counter = 0;
-	va_list list;
+    int i = 0, counter = 0;
+    va_list list;
+    va_start(list, format);
+    int (*f)(va_list);
 
-	for (i; format[i] != '\0'; i++)
-	{
-		if (format[i] != '%')
-		{
-			_putchar(format[i]);
-			counter++;
-		}
+    for (i; format[i] != '\0'; i++)
+    {
+        if (format[i] != '%')
+        {
+            _putchar(format[i]);
+            counter++;
+        }
         else
         {
-            if (format[i + 1] != NULL)
+            if (format[i + 1] != '\0')
             {
-            f = search(&format[i + 1]);
-            if (f != NULL)
-            {
-                f(list);
-            }
+                f = search(&format[i + 1]);
+                if (f != NULL)
+                {
+                    f(list);
+                }
             }
         }
-	}
-}
-
-int main(void)
-{
-_printf("d");
-return(0);
+    }
+        va_end(list);
 }
