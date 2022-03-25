@@ -9,3 +9,17 @@ int printf_character(va_list i)
     _putchar(ch);
     return (1);
 }
+
+int printf_string(va_list s)
+{
+    int count = 0, i = 0;
+
+    char *str = va_arg(s, char*);
+
+    for(i; str[i]; i++)
+    {
+        _putchar(str[i]);
+        count++;
+    }
+    return(count);
+}
