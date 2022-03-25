@@ -10,9 +10,9 @@ int printf_string(va_list s);
 
 typedef struct original
 {
-    char *s;
-    int (*f)(va_list);
+    char s;
+    int (f)(va_list);
 } estructura;
 
 
-#endif /*MAIN_H*/
+#endif /MAIN_H/

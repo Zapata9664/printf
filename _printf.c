@@ -10,6 +10,7 @@ int (*search(const char *format))(va_list)
     estructura arr[] = {
         {"c", printf_character},
         {"s", printf_string},
+      /*  {"s", printf_string}, */
         {NULL, NULL}};
 
     int i = 0;
@@ -22,6 +23,14 @@ int (*search(const char *format))(va_list)
         }
     }
     return(NULL);
+    for (i; arr[i].s; i++)
+    {
+        if (format == arr[i].s)
+        {
+            break;
+        }
+        return (arr[i].f);
+    }
 }
 
 int _printf(const char *format, ...)
@@ -47,6 +56,13 @@ int _printf(const char *format, ...)
                 f = search(&format[i]);
                 printf("%c", format[i]);
                 counter += f(list);
+            if (format[i + 1] != '\0')
+            {
+                f = search(&format[i + 1]);
+                if (f != NULL)
+                {
+                    f(list);
+                }
             }
             
         }
@@ -61,4 +77,5 @@ int main(void)
     _printf("%c\n", ch);
     printf("%c\n", ch);
     return (0);
+        va_end(list);
 }
