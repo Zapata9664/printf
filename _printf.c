@@ -1,32 +1,53 @@
-#include "main.h"
 #include <stdarg.h>
-#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "main.h"
+
+int (*search(const char *format))(va_list)
+{
+	estructura arr[] = {
+    ("c", printf_character);
+	("s", printf_string);
+	(NULL, NULL);
+};
+
+int i = 0;
+
+for (i; arr[i].s; i++)
+{
+	if (*format == arr[i].s)
+	{
+		break;
+	}
+	return (arr[i].f);
+}
+}
 
 int _printf(const char *format, ...)
 {
-    char string = 0;
-    /*char copy = 0;*/
+	int i = 0, counter = 0;
+	va_list list;
 
-    if ( format != NULL)
-    {
-        va_list str; /* create the argument*/
-        /*va_list copy;  this the copy of argument*/
+	for (i; format[i] != '\0'; i++)
+	{
+		if (format[i] != '%')
+		{
+			_putchar(format[i]);
+			counter++;
+		}
+        else
+        {
+            if (format[i + 1] != NULL)
+            {
+            f = search(&format[i + 1]);
+            if (f != NULL)
+            {
+                f(list);
+            }
+            else
+            {}
 
-        va_start(str, format); /* init the pointer*/
-        /*va_copy(copy, str);  this the copy of the pointer*/
-
-        string += va_arg(str, int); /*send the position of pointer*/
-        /*copy = va_arg(copy, ); the copy of the position of pointer*/
-
-        va_end(str); /*finished the arguments*/
-        /*va_end(copy); finished the argument*/
-    }
-
-    if (format == NULL)
-    {
-        return (0);
-    }
-
-    return(string);
-    /*return(copy);*/
+        }
+	}
 }
