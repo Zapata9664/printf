@@ -54,6 +54,10 @@ int _printf(const char *format, ...)
 		else
 		{
 			i++;
+			if (format[i] == '\0')
+			{
+				return (-1);
+			}
 			function = search(format[i]);
 			counter += (function) ? function(list) : _printf("%%%c", format[i]);
 		}
