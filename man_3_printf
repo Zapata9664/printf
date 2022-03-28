@@ -4,25 +4,49 @@
 .SH NAME
 _printf \- send a formatted string to standard output
 .SH SYNOPSIS
-nuseradd [USERNAME]
+#include<main.h>
+
+int _putchar(char c);
+
+int _printf(const char *format, ...);
+
+int printf_character(va_list i);
+
+int printf_string(va_list s);
+
+int (*search(char format))(va_list);
+
+int _putchar(char c);
+
+int _printf(const char *format, ...);
+
+int printf_character(va_list i);
+
+int printf_string(va_list s);
+
+int _strcmp(char *s1, char *s2);
+
+int printf_integer(va_list i);
+
+char *_atoi(long int num, int base);
+
+int printf_percent(va_list p);
+
+int printf_double(va_list d);
 .SH DESCRIPTION
-Prints to standard output arguments according to FORMAT
+Prints to standard output arguments according to a format
 .SH - Return Value
-Return de numbers of characters printed
-.BR c
-The int argument is converted to an unsigned char, then the resulting character
-is written
-.B %
- A '%' is written but no argument is converted. The complete version
-specification is '%%'
-.RETURN VALUE
 The function returns numbers of printed arguments.
 If the function fails, it returns a negative number
+
+.B 
+
 .EXAMPLES
 For this function to work out you need to add:
 #include "main.h"
+
 To print an simple array you need to do the following:
-_printf("Holberton is a good school\n"); The response to that function would be "Holberton"
+_printf("Holberton is a good school\n"); The response to that function would be "Holberton is a doog school"
 
 If you want to use an option it would go like the following:
 _printf("Holberton %s\n", "is a good school");
@@ -36,6 +60,7 @@ The response would be H with a new line.
 If you want to print an integrer
 _print("%i\n", 9);
 The reponse would be 9 with a new line
+
 .SH AUTHOR
 Valentina Zapata Jarammillo
 Felipe Rios Gome
