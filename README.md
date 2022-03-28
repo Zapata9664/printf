@@ -25,6 +25,10 @@ Making a merge of this for reach the goal of the function printf, recreating fla
 
 <!-- /TOC -->
 
+## This is the flowchart for the _printf
+![image](https://user-images.githubusercontent.com/98290484/160441621-fb3617b9-d5a5-43ef-9be0-6376be6fc681.png)
+
+
 ## How to Install and Run the Project
 
 ### Steps:
@@ -44,7 +48,7 @@ dear
 
 ## Credits
 
-😊 thank you very much dear peers, especially:
+thank you very much dear peers, especially 😊:
 
 Team members:
 Valentina Zapata - @Zapata9664
