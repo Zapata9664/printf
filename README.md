@@ -20,8 +20,8 @@ Making a merge of this for reach the goal of the function printf, recreating fla
    - [Table of content](#table-of-content)
 - [How to Install and Run the Project](#how-to-install-and-run-the-project)
     - [Steps:](#steps)
-    - [How to Use the Project](#how-to-use-the-project)
-    - [Credits](#credits)
+- [How to Use the Project](#how-to-use-the-project)
+- [Credits](#credits)
 
 <!-- /TOC -->
 
