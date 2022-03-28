@@ -22,3 +22,10 @@ Making a merge of this for reach the goal of the function printf, recreating fla
 
 <!-- /TOC -->
 
+## How to Install and Run the Project
+
+### Steps:
+
+1. Clone the repository
+2. Check the correct repository and files
+3. Run this command in the terminal for compile all files ended in .c : "gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c"
