@@ -46,9 +46,9 @@ dear
 
 😊 thank you very much dear peers, especially:
 
-team members:
+Team members:
 Valentina Zapata - @Zapata9664
 
-collaborators:
+Collaborators:
 Manuela Espinosa - @4521Manuela
 Yon Roa - @yompa_O
