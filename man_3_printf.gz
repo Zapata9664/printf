@@ -1,0 +1,41 @@
+.\" Manpage for _printf
+.\" Contact felipe.riosgg@gmail.com to correct errors or typos.
+.TH man _printf "28 March 2022" "1.0" "_printf man page"
+.SH NAME
+_printf \- send a formatted string to standard output
+.SH SYNOPSIS
+nuseradd [USERNAME]
+.SH DESCRIPTION
+Prints to standard output arguments according to FORMAT
+.SH - Return Value
+Return de numbers of characters printed
+.BR c
+The int argument is converted to an unsigned char, then the resulting character
+is written
+.B %
+ A '%' is written but no argument is converted. The complete version
+specification is '%%'
+.RETURN VALUE
+The function returns numbers of printed arguments.
+If the function fails, it returns a negative number
+.EXAMPLES
+For this function to work out you need to add:
+#include "holberton.h"
+To print an simple array you need to do the following:
+_printf("Holberton is a good school\n"); The response to that function would be "Holberton"
+
+If you want to use an option it would go like the following:
+_printf("Holberton %s\n", "is a good school");
+The response would be "Holberton is a good school", the %s understand that it need to print a
+string
+
+If you want to print a character
+_printf("%c\n", 'H');
+The response would be H with a new line.
+
+If you want to print an integrer
+_print("%i\n", 9);
+The reponse would be 9 with a new line
+.SH AUTHOR
+Valentina Zapata Jarammillo
+Felipe Rios Gome
