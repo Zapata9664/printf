@@ -48,7 +48,8 @@ dear
 
 Team members:
 Valentina Zapata - @Zapata9664
-Felioe Rios - @FelipelosRg
+
+Felipe Rios - @FelipelosRg
 
 Collaborators:
 Manuela Espinosa - @4521Manuela
