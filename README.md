@@ -14,12 +14,6 @@ Making a merge of this for reach the goal of the function printf, recreating fla
 
 ## Table of content
 
-<!-- TOC -->autoauto
-
-- [_printf("Create the function")](#_printfcreate-the-function)auto
-- [Description.](#description)auto
-- [Table of content](#table-of-content)autoauto
-
-<!-- /TOC -->
+<!-- TOC -->autoauto- [_printf("Create the function")](#_printfcreate-the-function)auto    - [Description.](#description)auto    - [Table of content](#table-of-content)autoauto<!-- /TOC -->
 
 
