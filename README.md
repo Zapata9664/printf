@@ -30,3 +30,22 @@ Making a merge of this for reach the goal of the function printf, recreating fla
 2. Check the correct repository and files.
 3. Run this command in the terminal for compile all files ended in .c : "gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c"
 4. Check te file ended in .out and execute.
+
+## How to Use the Project
+
+The project has tree important parts:
+dear
+1. The file _printf.c is the root file, in this file found the builder of list of argumentsm, the call of every functions and the begin and the finish the variadic functions.
+2. The second file important is main.c this file allocate the prototypes of the functions.
+3. the other files are the functions nedeed for the execute the functions in the file _printf.c 
+
+## Credits
+
+😊 thank you very much dear peers, especially:
+
+team members:
+Valentina Zapata - @Zapata9664
+
+collaborators:
+Manuela Espinosa - @4521Manuela
+Yon Roa - @yompa_O
