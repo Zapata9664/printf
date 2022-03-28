@@ -26,7 +26,7 @@ Making a merge of this for reach the goal of the function printf, recreating fla
 <!-- /TOC -->
 
 ## This is the flowchart for the _printf
-![image](https://user-images.githubusercontent.com/98290484/160441621-fb3617b9-d5a5-43ef-9be0-6376be6fc681.png)
+![Untitled Diagram](https://user-images.githubusercontent.com/98290484/160441854-171934e4-1033-4ef1-9045-6ed08a7f89ed.jpg)
 
 
 ## How to Install and Run the Project
