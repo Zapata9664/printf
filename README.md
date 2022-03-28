@@ -15,14 +15,13 @@ Making a merge of this for reach the goal of the function printf, recreating fla
 ## Table of content 📑.
 
 - [_printf("Create the function")](#_printfcreate-the-function)
-    - [Description.](#description)
-    - [Table of content](#table-of-content)
-    - [This is the flowchart for the _printf](#this-is-the-flowchart-for-the-_printf)
-    - [How to Install and Run the Project](#how-to-install-and-run-the-project)
+    - [Description 📜.](#description-)
+    - [Table of content 📑.](#table-of-content-)
+    - [This is the flowchart for the _printf 🗿.](#this-is-the-flowchart-for-the-_printf-)
+    - [How to Install and Run the Project 💽.](#how-to-install-and-run-the-project-)
         - [Steps:](#steps)
-    - [How to Use the Project](#how-to-use-the-project)
-    - [Credits](#credits)
-
+    - [How to Use the Project 💬.](#how-to-use-the-project-)
+    - [Credits ✨:](#credits-)
 
 ## This is the flowchart for the _printf 🗿.
 ![Untitled Diagram (1)](https://user-images.githubusercontent.com/98290484/160445869-5f8037f4-a758-426c-a75b-20d2034f6d6f.jpg)
