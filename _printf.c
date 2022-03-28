@@ -7,12 +7,6 @@
 
 int (*search(char c))(va_list)
 {
-<<<<<<< HEAD
-    estructura arr[] = {
-        {"c", printf_character},
-        {"s", printf_string},
-        {NULL, NULL}};
-=======
 	estructura arr[] = {
 		{"c", printf_character},
 		{"s", printf_string},
@@ -20,21 +14,10 @@ int (*search(char c))(va_list)
 		{"i", printf_integer},
 		{"d", printf_double},
 		{NULL, NULL}};
->>>>>>> c87f86f6fe589bfea4e6f29d9a4f10df124fa95f
 
 	int i = 0;
 	char *x = &c;
 
-<<<<<<< HEAD
-    for (i; arr[i].s != NULL; i++)
-    {
-        if (_strcmp(arr[i].s, x) == 0)
-        {
-            return (arr[i].f);
-        }
-    }
-    return(NULL);
-=======
 	while (arr[i].s != NULL)
 	{
 		if (_strcmp(arr[i].s, x) == 0)
@@ -44,7 +27,6 @@ int (*search(char c))(va_list)
 		i++;
 	}
 	return (NULL);
->>>>>>> c87f86f6fe589bfea4e6f29d9a4f10df124fa95f
 }
 
 /**
@@ -60,34 +42,6 @@ int _printf(const char *format, ...)
 	va_list list;
 	int (*function)(va_list);
 
-<<<<<<< HEAD
-    while (format[i] != '\0')
-    {
-        if (format[i] != '%')
-        {
-            _putchar(format[i]);
-            counter++;
-        }
-        else
-        {
-            i++;
-            f = search(format[i]);
-            counter += (f) ? f(list) : _printf("%%%c", format[i]);
-        }
-        i++;
-    }
-    va_end(list);
-    return(counter);
-}
-
-int main(void)
-{
-    char ch = 'd';
-    _printf("%c\n", ch);
-    printf("%c\n", ch);
-    return (0);
-}
-=======
 	va_start(list, format);
 
 	if (format == NULL)
@@ -117,4 +71,3 @@ int main(void)
 	va_end(list);
 	return (counter);
 }
->>>>>>> c87f86f6fe589bfea4e6f29d9a4f10df124fa95f
