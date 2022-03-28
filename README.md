@@ -14,15 +14,14 @@ Making a merge of this for reach the goal of the function printf, recreating fla
 
 ## Table of content
 <!-- TOC -->
-
 - [_printf("Create the function")](#_printfcreate-the-function)
-   - [Description.](#description)
-   - [Table of content](#table-of-content)
+- [Description.](#description)
+- [Table of content](#table-of-content)
+- [This is the flowchart for the _printf](#this-is-the-flowchart-for-the-_printf)
 - [How to Install and Run the Project](#how-to-install-and-run-the-project)
-    - [Steps:](#steps)
+- [Steps:](#steps)
 - [How to Use the Project](#how-to-use-the-project)
 - [Credits](#credits)
-
 <!-- /TOC -->
 
 ## This is the flowchart for the _printf
