@@ -20,7 +20,7 @@ The function returns numbers of printed arguments.
 If the function fails, it returns a negative number
 .EXAMPLES
 For this function to work out you need to add:
-#include "holberton.h"
+#include "main.h"
 To print an simple array you need to do the following:
 _printf("Holberton is a good school\n"); The response to that function would be "Holberton"
 
