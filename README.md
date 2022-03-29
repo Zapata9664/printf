@@ -13,7 +13,6 @@ The purposeof this project is create the function from Zero, the project was mak
 Making a merge of this for reach the goal of the function printf, recreating flags as integer, char and string and dectecting when there is a double percent for printing only one of them. the main challenge was implemented the new tools WSL and Visual Code, this enviromets is new for the team and second the logical for conect various functions is very important and challenging.
 
 ## Table of content 📑.
-
 - [_printf("Create the function")](#_printfcreate-the-function)
     - [Description 📜.](#description-)
     - [Table of content 📑.](#table-of-content-)
@@ -21,6 +20,7 @@ Making a merge of this for reach the goal of the function printf, recreating fla
     - [How to Install and Run the Project 💽.](#how-to-install-and-run-the-project-)
         - [Steps:](#steps)
     - [How to Use the Project 💬.](#how-to-use-the-project-)
+        - [This is an examaple that how use _printf](#this-is-an-examaple-that-how-use-_printf)
     - [Credits ✨:](#credits-)
 
 ## This is the flowchart for the _printf 🗿.
