@@ -46,6 +46,16 @@ dear
 
 ### This is an examaple that how use _printf
 
+- In this part, create a little main for print strings:
+
+![image](https://user-images.githubusercontent.com/98775024/160511439-fd37b734-a83f-42c7-92fe-759a2289c1fe.png)
+
+- This is the result after add the commands:
+
+![image](https://user-images.githubusercontent.com/98775024/160511657-96c16ff8-609e-4558-95d2-67c0843d5683.png)
+
+
+
 
 ## Credits ✨:
 
