@@ -44,6 +44,9 @@ dear
 2. The second file important is main.c this file allocate the prototypes of the functions.
 3. the other files are the functions nedeed for the execute the functions in the file _printf.c 
 
+### This is an examaple that how use _printf
+
+
 ## Credits ✨:
 
 thank you very much dear peers, especially 😊:
